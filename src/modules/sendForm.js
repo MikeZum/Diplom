@@ -38,7 +38,6 @@ const sendForm = () => {
             .then(data => {
                 statusBlock.textContent = successText
                 formElements.forEach(input => {
-                    console.log(input);
                     input.value = ''
                 })
             })
@@ -50,6 +49,7 @@ const sendForm = () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         submitForm()
+      
 
 
     })

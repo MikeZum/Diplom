@@ -43,7 +43,6 @@ const modal = () => {
     }
 
     const showModal = () => {
-        console.log(callbackBtn);
         callbackBtn.addEventListener('click', (e) => {
             bounceEaseOut = makeEaseOut(bounce);
             if (e.target.classList.contains('fancyboxModal')) {
